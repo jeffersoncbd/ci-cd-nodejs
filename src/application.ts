@@ -1,15 +1,5 @@
-import 'dotenv/config'
-import express from 'express'
+import { Server } from './modules/Server'
 
-const server = express()
+const server = new Server()
 
-const { PORT } = process.env
-if (!PORT) {
-  throw new Error('Porta não definida no arquivo .env')
-}
-
-server.get('/', (request, response) => response.send('Hello World'))
-
-server.listen(PORT, () => {
-  console.log(`Servidor iniciado na porta ${PORT}`)
-})
+server.start()
