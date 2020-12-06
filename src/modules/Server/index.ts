@@ -10,7 +10,7 @@ export class Server {
   }
 
   private configureServer() {
-    this.server.get('/', (request, response) => response.send('Hello World'))
+    this.server.get('/', (request, response) => response.send('Force error'))
   }
 
   start() {
