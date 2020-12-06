@@ -42,6 +42,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           cd ~/ci-cd-nodejs
-          git pull origin master
+          git pull
           yarn
+          yarn tsc
           pm2 restart CICD-NodeJS
