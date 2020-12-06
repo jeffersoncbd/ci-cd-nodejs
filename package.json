@@ -4,6 +4,7 @@
   "main": "dist/application.js",
   "scripts": {
     "dev": "ts-node-dev src/application.ts",
+    "build": "tsc",
     "test": "jest"
   },
   "license": "MIT",
