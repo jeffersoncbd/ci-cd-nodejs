@@ -10,7 +10,7 @@ export class Server {
   }
 
   private configureServer() {
-    this.server.get('/', (request, response) => response.send('API - OK'))
+    this.server.get('/', (request, response) => response.send('API Status - OK'))
   }
 
   start() {
