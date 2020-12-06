@@ -43,6 +43,6 @@ jobs:
         script: |
           cd ~/ci-cd-nodejs
           git pull
-          yarn
-          yarn tsc
+          npm install
+          npm run build
           pm2 restart CICD-NodeJS
